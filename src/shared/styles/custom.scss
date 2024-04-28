@@ -1,0 +1,40 @@
+/* File Picker*/
+div.filepicker {
+    background-color: #f9f9f9;;
+    border: 2px dashed #7092BE;
+}
+
+/* Dropzone*/
+.dropzone .dz-preview{
+    position: sticky !important;
+    background: transparent;
+}
+
+.dropzone .dz-preview .dz-details .dz-size{
+    margin-bottom: 3em;
+}
+
+.dropzone .dz-preview .dz-details {
+    padding-bottom: 0;
+}
+
+.dropzone .dz-preview .dz-error-message {
+    top: 50%;
+}
+
+.dz-success-mark svg g path{
+    fill: #28a745;
+}
+
+.dz-error-mark svg g g {
+    fill: #c00;
+}
+
+.dropzone .dz-preview.dz-success .dz-success-mark {
+    opacity: 1;
+    -webkit-animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);
+    -ms-animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);
+    -o-animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);
+    animation: slide-in 3s cubic-bezier(0.77, 0, 0.175, 1);
+}

@@ -1,0 +1,50 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "my-timesheet-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/myTimesheet/MyTimesheetWebPart.js",
+          "manifest": "./src/webparts/myTimesheet/MyTimesheetWebPart.manifest.json"
+        }
+      ]
+    },
+    "team-timesheet-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/teamTimesheet/TeamTimesheetWebPart.js",
+          "manifest": "./src/webparts/teamTimesheet/TeamTimesheetWebPart.manifest.json"
+        }
+      ]
+    },
+    "side-menu-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/sideMenu/SideMenuWebPart.js",
+          "manifest": "./src/webparts/sideMenu/SideMenuWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "jquery": {
+      "path": "node_modules/jquery/dist/jquery.min.js",
+      "globalName": "jQuery"
+    },
+    "popper.js": {
+      "path": "node_modules/popper.js/dist/popper.min.js",
+      "globalName": "popper.js"
+    },    
+    "bootstrap": {
+      "path": "node_modules/bootstrap/dist/js/bootstrap.min.js",
+      "globalName": "jQuery"
+    }
+  },
+  "localizedResources": {
+    "MyTimesheetWebPartStrings": "lib/webparts/myTimesheet/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "TeamTimesheetWebPartStrings": "lib/webparts/teamTimesheet/loc/{locale}.js",
+    "SideMenuWebPartStrings": "lib/webparts/sideMenu/loc/{locale}.js"
+  }
+}
